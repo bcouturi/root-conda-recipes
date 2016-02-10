@@ -29,4 +29,7 @@ ENV PS1 "\u@\h:\w$ "
 # RUN CONDA_PY=2.7 conda build conda-recipes/root5
 # RUN CONDA_PY=3.4 conda build conda-recipes/root5
 # RUN CONDA_PY=2.7 conda build conda-recipes/root6
-# RUN CONDA_PY=3.4 conda build conda-recipes/root6
+RUN git clone https://github.com/bcouturi/root-conda-recipes.git conda-recipes
+RUN CONDA_PY=3.4 conda build conda-recipes/root6
+
+
